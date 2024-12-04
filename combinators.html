@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div p /*For all p tags within the div tag*/
+        {
+            background-color: red;
+        }
+        div > p /*Only for the p tags directly under the div tag*/
+        {
+            background-color: aqua;
+        }
+        div + p /*For the first p tag that comes immediately after the div tag*/
+        {
+            background-color: chartreuse;
+        }
+        div ~ p /*For all p tags that come after the div tag*/
+        {
+            background-color: brown;
+        }
+    </style>
+</head>
+<body>
+    <!-- combinators -->
+    <!-- 1 - Descendant Selector -->
+    <!-- 2 - Child Selector -->
+    <!-- 3 - Adjacent Sibling Selector (+) -->
+    <!-- 4 - General Sibling Selector (~) -->
+    <p>1.paragraph</p>
+    <div>
+        <p>2.paragraph</p>
+        <p>3.paragraph</p>
+        <section>
+            <p>4.paragraph</p>
+        </section>
+        
+    </div>
+    <p>5.paragraph</p>     
+    <p>6.paragraph</p>     
+    
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+
+    *{
+        box-sizing: border-box;
+    }
+
+    body{
+        margin: 0;
+        height: 2000px;
+    }
+
+    .box{
+        padding: 10px;
+        border: 5px solid #6D5B95;
+        margin-bottom: 10px;
+    }
+
+    .container{
+        position: relative;
+    }
+
+    .navbar{ 
+        background-color: #feb236;
+        position: fixed;
+        width: 100%;
+        z-index: 2;
+    }
+
+    .content{ 
+        background-color: #D64161;
+        position: absolute;
+        width: 300px;
+        top: 50px;
+        left: 0;
+        z-index: 1;
+    }
+
+    .footer{ 
+        background-color: #FF7B25;
+        width: 100%;
+        position: relative;
+        top: 50px;
+        left: 0;
+        z-index: -1;
+    }
+
+</style>
+
+<body>
+
+    <div class="container">
+        <div class="box navbar">Navbar</div>
+        <div class="box content">Content</div>
+        <div class="box footer">Footer</div> 
+    </div>
+    
+</body>
+</html>
